@@ -1,3 +1,104 @@
 main{
+
+
+    h1{
+        font-style: italic;
+        font-size: 3.8rem;
+        margin-top: 15px;
+        margin-bottom: 25px;
+
+        color: antiquewhite;
+        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+
+      }
+
+      h4{
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: -13px;
+      }
+
     padding-top: 80px;
+    .img-container {
+        img{
+
+            width: 200px;
+            object-fit: cover;
+            height: 100%;
+            object-position: top;
+        }
+      }
+
+
+    .container-custom{
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        border: 2px solid rgba(211, 211, 211, 0.277);
+        padding-top: 102px;
+        background-color: rgba(11, 12, 12, 0.314);
+        border-radius: 20px;
+        position: relative;
+
+        .card-custom {
+            width: 650px;
+            margin-bottom: 40px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.659);
+            color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.374);
+            .description{
+                font-size: 0.8rem;
+              }
+
+            .datas{
+                position: absolute;
+                bottom: 5px;
+                margin-top: 20px;
+                p{
+                    &:first-child{
+                        margin-bottom: 0px;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                span{
+                    font-size: 0.7rem;
+                  }
+              }
+
+              .discover-btn{
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                background-color: darkslategrey;
+                border: rgba(255, 255, 255, 0.374);
+            }
+
+          }
+    }
+
+    .detail-container{
+        margin: 0 50px;
+        margin-bottom: 40px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.659);
+        color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.374);
+
+        .img-container{
+            height: 400px ;
+            width: 250px;
+            object-fit: cover;
+
+            img{
+                border-radius: 20px;
+            }
+
+        }
+    }
 }

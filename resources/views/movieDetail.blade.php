@@ -8,7 +8,7 @@
 
     <h1 class="text-center my-5">{{$movie->title}}</h1>
 
-    <div class="d-flex detail-container p-5">
+    <div class="d-flex align-items-center detail-container p-5">
         <div class="img-container">
             <img src="{{asset('img/' . $movie->img ) }}" alt="">
         </div>
