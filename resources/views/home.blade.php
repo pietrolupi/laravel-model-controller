@@ -8,14 +8,22 @@
 
     <div class="container d-flex flex-wrap">
 
-        <div class="card" style="width: 18rem;">
+        @foreach ($movies as $movie )
+
+        <div class="card m-4" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">{{$movie -> title}}</h2>
+              <h6>{{$movie->original_title}}</h6>
+              <p class="card-text">Nationality: {{$movie->nationality}}</p>
+              <p class="card-text">Date: {{$movie->date}}</p>
+              <p class="card-text">Vote: {{$movie->vote}}</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
+
+        @endforeach
+
 
     </div>
 
