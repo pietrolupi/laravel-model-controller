@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/dettaglio_film/{id}', [PageController::class, 'movieDetail'])->name('movieDetail');
+Route::get('/genere_thriller', [PageController::class, 'thrillers'])->name('thrillers');
+Route::get('/genere_Si-Fi',[PageController::class, 'scienceFictions'])->name('scienceFictions');

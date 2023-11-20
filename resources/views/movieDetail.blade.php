@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('title')
-    | Movie Details
+    | Movie Detail
 @endsection
 
 @section('content')

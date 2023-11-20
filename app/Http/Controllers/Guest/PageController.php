@@ -22,4 +22,24 @@ class PageController extends Controller
 
         return view('movieDetail', compact('movie'));
     }
+
+    public function thrillers(){
+
+        $movies = Movie::where('type', 'thriller')->get();
+        return view('thrillers', compact('movies'));
+
+    }
+
+    public function scienceFictions(){
+
+        $movies = Movie::where('type', 'sifi')->get();
+        return view('scienceFictions', compact('movies'));
+    }
+
+    public function dramas(){
+        $movies = Movie::where('type', 'drama')->get();
+
+        return view('dramas', compact('movies'));
+    }
+
 }
