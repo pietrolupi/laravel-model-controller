@@ -1,19 +1,53 @@
 <header>
-    <ul class="nav">
+    <ul class="nav-custom">
 
-        <li class="nav-item">
-            <a class="{{Route::currentRouteName() === 'home' ? 'active' : ''}}  nav-link" href="{{route('home')}}">HOME</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="{{Route::currentRouteName()=== 'thrillers' ? 'active' : ''}} nav-link active" aria-current="page" href="{{route('thrillers')}}">Thriller</a>
+        <li class="nav-item-custom">
+            <a class="{{Route::currentRouteName() === 'home' ? 'active' : ''}}  " href="{{route('home')}}">HOME</a>
         </li>
 
-        <li class="nav-item">
-          <a class="{{Route::currentRouteName() === 'scienceFictions' ? 'active' : ''}} nav-link" href="{{route('scienceFictions')}}">Si-Fi</a>
+        <li class="nav-item-custom">
+          <a class="{{Route::currentRouteName()=== 'thrillers' ? 'active' : ''}} " aria-current="page" href="{{route('thrillers')}}">Thriller</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+        <li class="nav-item-custom">
+          <a class="{{Route::currentRouteName() === 'scienceFictions' ? 'active' : ''}} " href="{{route('scienceFictions')}}">Si-Fi</a>
         </li>
+
+        <li class="nav-item-custom">
+            <a class="{{Route::currentRouteName() === 'dramas' ? 'active' : ''}}  " href="{{route('dramas')}}">Drama</a>
+        </li>
+
+        <li class="nav-item-custom">
+            <a class="{{Route::currentRouteName() === 'kids' ? 'active' : ''}}  " href="{{route('kids')}}">Per Bambini</a>
+        </li>
+
       </ul>
 </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
